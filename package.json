@@ -1,0 +1,29 @@
+{
+  "name": "onionify-article",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "type": "module",
+  "repository": "https://github.com/hyperbrowserai/onionify-article",
+  "author": "Ninad Sinha <32181677+AHarmlessPyro@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@hyperbrowser/sdk": "^0.6.0",
+    "@tsconfig/next": "^2.0.3",
+    "@tsconfig/node20": "^20.1.4",
+    "@tsconfig/strictest": "^2.0.5",
+    "commander": "^12.1.0",
+    "marked": "^15.0.3",
+    "marked-terminal": "^7.2.1",
+    "openai": "^4.76.0",
+    "ora": "^8.1.1",
+    "typescript": "^5.7.2",
+    "zod": "^3.24.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./build/index.js"
+  },
+  "devDependencies": {
+    "@types/marked-terminal": "^6.1.1"
+  }
+}
