@@ -1,3 +1,4 @@
+import "dotenv/config";
 import { OpenAI } from "openai";
 import hyperbrowser from "@hyperbrowser/sdk";
 import { Command } from "commander";
@@ -196,7 +197,6 @@ program
       console.log("\nOriginal Article:");
       console.log("Title:", article.title);
 
-      console.log("Onionifying the article...");
       const onionifiedArticle = await onionifyArticle(article);
 
       console.log("\n--- Onionified Article ---");
